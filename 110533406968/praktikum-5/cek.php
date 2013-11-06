@@ -15,19 +15,19 @@ document.location='index.php'</script><?php
 else if (empty($_POST["user"]) || empty($_POST["pass"])){?>
 <script language = "JavaScript">
 alert("Isi Username dan Password Anda Terlebih dahulu !!!")
-document.location='tugas_praktikum.php'
+document.location='login.php'
 </script><?php
 }
 else if((@!eregi($userstring, $user)) || (@!eregi($passstring, $pass))){?>
 <script language = "JavaScript">
 alert("Username dan Password harus huruf")
-document.location='tugas_praktikum.php'</script><?php
+document.location='login.php'</script><?php
 }
 
 else if (("$user" != "$nama")||("$pass" != "$pasword")) {?>
 <script language = "JavaScript">
 alert("Username dan Password anda salah....")
-document.location='tugas_praktikum.php'</script><?php
+document.location='login.php'</script><?php
 }
 ?>
 
